@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <title>Data Mahasiswa</title>
 </head>
 <body>
@@ -26,6 +27,9 @@
             <li class="nav-item">
             <a class="nav-link text-white" href="#">Kontak Kami</a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route('logout') }}" class="form-inline my-2 my-lg-0 btn btn-danger">Logout</a>
+            </li>
         </ul>
     </div>
 </nav>
@@ -41,7 +45,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="row">
         <div class="col-3">
             <div class="btn-group-vertical">

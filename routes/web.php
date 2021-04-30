@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 // Route::patch('/mahasiswas/{mahasiswa}',[MahasiswaController::class,'update'])->name('mahasiswas.update');
 // Route::delete('/mahasiswas/{mahasiswa}',[MahasiswaController::class,'destroy'])->name('mahasiswas.destroy');
 
-Route::get('/', [AuthController::class, 'showFormLogin'])->name('login');
+Route::get('/', [AuthController::class, 'welcome'])->name('welcome');
+// Route::get('/', [AuthController::class, 'showFormLogin'])->name('login');
 Route::get('login', [AuthController::class, 'showFormLogin'])->name('login');
 Route::post('login', [AuthController::class, 'login']);
 Route::get('register', [AuthController::class, 'showFormRegister'])->name('register');
